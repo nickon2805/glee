@@ -48,17 +48,27 @@
     margin-right: 20px;
   }
   &__link-heart{
-    padding: 17px 20px 17px 20px;
+    padding: 17px 24px;
     background-color: #fcd7b6;
-    border-radius: 50% 0 0 50%;
-    border-right: 1px solid #fff;
+    border-radius: 56% 0 0 56%;
+    // border-right: 1px solid #fff;
+    position: relative;
+  }
+  &__link-heart::after{
+    position: absolute;
+    content: "";
+    top: 11px;
+    right: 0;
+    height: 32px;
+    width: 2px;
+    background-color: #fde7d3;
   }
   &__link-cart{
-    padding: 17px 20px 17px 20px;
+    padding: 17px 20px;
     background-color: #fcd7b6;
     border-radius: 0 50% 50% 0;
     margin-right: 20px;
-    border-left: 1px solid #fff;
+    // border-left: 1px solid #fff;
   }
   &__link-user{
     padding: 17px;
@@ -74,7 +84,7 @@
     border-radius: 50%;
     background-color: #fff;
     top: 8px;
-    right: 8px;
+    right: 12px;
     color: #334c59;
     text-align: center;
     line-height: 16px;
@@ -82,5 +92,95 @@
 }
 
 // Header
+
+// Footer
+
+.footer-top{
+  padding: 70px 0;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__contact{
+    width: 195px;
+    margin-right: 100px;
+  }
+  &__nav{
+    width: 122px;
+    margin-right: 180px;
+  }
+  &__item-form{
+    width: 270px;
+  }
+  &__logo{
+    margin-bottom: 24px;
+    display: block;
+  }
+  &__adress,
+  &__email,
+  &__phone{
+    display: block;
+    margin-bottom: 18px;
+    line-height: 32px;
+  }
+  &__title{
+    margin: 21px 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1f2044;
+    @extend %dmsans-700;
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &__text{
+    margin-bottom: 30px;
+  }
+  &__form{
+    display: flex;
+  }
+  &__form-input{
+    max-width: 170px;
+    width: 100%;
+    background-color: #fef7f0;
+    border: none;
+    padding: 14px;
+  &::placeholder{
+    color: #234969;
+    font-size: 12px;
+    @extend %dmsans-400;
+  }
+ }
+  &__form-btn{
+    background-color: #a3bbc8;
+    border: none;
+    padding: 12px 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__list{
+    display: flex;
+  }
+  &__item:first-child{
+    border-right: 1px solid $default;
+  }
+  &__item:nth-child(2){
+    border-right: 1px solid $default;
+  }
+  &__item:nth-child(3){
+    border-right: 1px solid $default;
+  }
+  &__item{
+    padding: 0 12px;
+  }
+}
+
+// Footer
 
 @import 'media';
