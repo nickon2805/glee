@@ -51,7 +51,6 @@
     padding: 17px 24px;
     background-color: #fcd7b6;
     border-radius: 56% 0 0 56%;
-    // border-right: 1px solid #fff;
     position: relative;
   }
   &__link-heart::after{
@@ -68,10 +67,9 @@
     background-color: #fcd7b6;
     border-radius: 0 50% 50% 0;
     margin-right: 20px;
-    // border-left: 1px solid #fff;
   }
   &__link-user{
-    padding: 17px;
+    padding: 15px;
     background-color: #a3bbc8;
     border-radius: 50%;
   }
@@ -92,6 +90,8 @@
 }
 
 // Header
+
+
 
 // Footer
 
