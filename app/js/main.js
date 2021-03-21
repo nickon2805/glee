@@ -8,4 +8,6 @@ $('.top-slider__inner').slick({
   autoplaySpead: 2000
 })
 
+  var mixer = mixitup('.products__content');
+
 });
