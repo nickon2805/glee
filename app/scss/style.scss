@@ -178,19 +178,24 @@
   }
 }
 
+// Top Slider
+
+// Info 
+
 .info{
   background-color: #fef7f0;
   display: flex;
   justify-content: space-around;
   &__item{
-    max-width: 550px;
-    padding: 40px 150px;
+    padding: 40px 0;
   }
   &__item:nth-child(2){
+    padding: 40px 130px;
     border-left: 1px solid #e8e4df;
     border-right: 1px solid #e8e4df;
   }
   &__item-title{
+    margin-left: 30px;
     font-size: 18px;
     line-height: 30px;
     @extend %dmsans-700;
@@ -217,9 +222,12 @@
     background-image: url('../images/secure.svg');
     background-repeat: no-repeat;
   }
+  &__item-text{
+    margin-left: 30px;
+  }
 }
 
-// Top slider
+// Info
 
 // Products
 
@@ -321,6 +329,78 @@
 }
 
 // Products
+
+// Light
+
+.light{
+  padding: 96px 0;
+  &__items{
+    display: flex;
+    justify-content: center;
+  }
+  &__item{
+    background-color: #feefe2;
+    display: flex;
+    height: 390px;
+    & + .light__item{
+      margin-left: 30px;
+    }
+  }
+  &__item-image{
+    margin-top: -104px;
+    margin-bottom: 80px;
+  }
+  &__item-info{
+    padding: 100px 100px 80px 30px;
+  }
+  &__item-title{
+    max-width: 258px;
+    font-size: 26px;
+    line-height: 32px;
+    @extend %dmsans-700;
+    color: #243f4d;
+    margin-bottom: 24px;
+  }
+  &__item-text{
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: #243f4d;
+    max-width: 340px;
+    margin-bottom: 28px;
+  }
+  &__item-link{
+    background-color: #feefe2;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+    padding: 20px 80px 20px 20px;
+    color: #436372;
+    cursor: pointer;
+    position: relative;
+  }
+  &__item-link::after{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    top: 30px;
+    right: 24px;
+    background-color: #436372;
+  }
+  &__item-link::before{
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 0;
+	  height: 0;
+	  border-top: 5px solid transparent;
+	  border-left: 6px solid #436372;
+	  border-bottom: 5px solid transparent;
+  }
+}
+
+// Light
 
 // Footer
 
