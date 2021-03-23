@@ -336,22 +336,21 @@
   padding: 96px 0;
   &__items{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   &__item{
     background-color: #feefe2;
     display: flex;
     height: 390px;
-    & + .light__item{
-      margin-left: 30px;
-    }
+    max-width: 870px;
+    width: 100%;
+    justify-content: space-evenly;
   }
   &__item-image{
     margin-top: -104px;
-    margin-bottom: 80px;
   }
   &__item-info{
-    padding: 100px 100px 80px 30px;
+    margin-top: 100px;
   }
   &__item-title{
     max-width: 258px;
@@ -401,6 +400,202 @@
 }
 
 // Light
+
+// Design
+
+.design{
+  margin-bottom: 121px;
+  &__title{
+    font-size: 36px;
+    line-height: 46px;
+    @extend %dmsans-700;
+    color: #191919;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__filter-btn{
+    text-align: center;
+    margin-bottom: 65px;
+  }
+  &__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+    color: #8b8b8b;
+    @extend %dmsans-700;
+    transition: all .3s;
+    &:hover{
+      color: #191919;
+    }
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item{
+    height: 250px;
+    width: 370px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 44px;
+    padding-left: 36px;
+  }
+  &__item-title{
+    font-size: 20px;
+    line-height: 30px;
+    @extend %dmsans-700;
+    color: #191919;
+    margin-bottom: 10px;
+    max-width: 172px;
+  }
+  &__item-text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #a3bbc8;
+    @extend %dmsans-700;
+  }
+}
+
+// Design
+
+// Video
+
+.video{
+  margin-bottom: 120px;
+  background-image: url('../images/video-bg.jpg');
+  height: 504px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Video
+
+// blog
+
+.blog{
+  background-image: url('../images/blog/blog-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 438px;
+  background-position: center bottom;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 44px;
+  }
+  &__top-title{
+    font-size: 36px;
+    line-height: 46px;
+    @extend %dmsans-700;
+    color: $title;
+  }
+  &__top-link{
+    font-size: 16px;
+    line-height: 26px;
+    color: $title;
+    @extend %dmsans-700;
+    padding-right: 25px;
+    position: relative;
+  }
+  &__top-link::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 9px;
+    right: 0;
+    border-top: 1px solid $title;
+    border-right: 1px solid $title;
+    transform: rotate(45deg);
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  &__item{
+    max-width: 370px;
+    background-color: #fff;
+  }
+  &__item-imglink{
+    display: block;
+    position: relative;
+    img{
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  &__item-box{
+    padding: 30px 25px;
+  }
+  &__item-text{
+    font-size: 18px;
+    line-height: 28px;
+    color: #262626;
+    @extend %dmsans-500;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__item-info{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  &__item-author,
+  &__item-date{
+    padding-left: 20px;
+    margin-right: 26px;
+    font-size: 12px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: #222933;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: -5px;
+      top: 4px;
+    }
+  }
+  &__item-author::before{
+    background-image: url('../images/icons/blog-icon-1.svg');
+  }
+  &__item-date::before{
+    background-image: url('../images/icons/blog-icon-2.svg');
+  }
+  &__partners{
+    padding-bottom: 88px;
+  }
+  &__partner-list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__item-news{
+    position: absolute;
+    font-size: 14px;
+    line-height: 20px;
+    bottom: -10px;
+    left: 30px;
+    padding: 2px 25px;
+    color: #fff;
+    background-color: #a3bbc8;
+    border-radius: 25px;
+    text-transform: uppercase;
+  }
+}
+
+// blog
 
 // Footer
 
