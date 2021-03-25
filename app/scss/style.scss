@@ -728,6 +728,247 @@
 
 // Terms
 
+// About
+
+.about-top{
+  padding: 118px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__content{
+    margin-left: 48px;
+  }
+  &__time{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__num{
+    font-size: 140px;
+    line-height: 32px;
+    color: #a3bbc8;
+    @extend %dmsans-700;
+    margin-right: 24px;
+  }
+  &__text{
+    width: 90px;
+    color: #243f4d;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    margin-top: 24px;
+  }
+  &__title{
+    font-size: 32px;
+    line-height: 36px;
+    @extend %dmsans-700;
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+  &__desc{
+    max-width: 566px;
+    width: 100%;
+    color: #243f4d;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    padding-bottom: 61px;
+    border-bottom: 2px solid #ebeef3;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 36px;
+  }
+  &__item:first-child{
+    position: relative;
+      &::after{
+      position: absolute;
+      content: "";
+      top: 4px;
+      right: -28px;
+      height: 52px;
+      width: 2px;
+      background-color: #e6eaf0;
+    }
+  }
+  &__item:last-child{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: -88px;
+      height: 52px;
+      width: 2px;
+      background-color: #e6eaf0;
+    }
+  }
+  &__item-num{
+    font-size: 32px;
+    line-height: 36px;
+    @extend %dmsans-700;
+    color: #243f4d;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -56px;
+    }
+  }
+  &__projects::before{
+    background-image: url('../images/icons/projects-icon-1.svg');
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 38px;
+  }
+  &__revenue::before{
+    background-image: url('../images/icons/projects-icon-2.svg');
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 39px;
+  }
+  &__awards::before{
+    background-image: url('../images/icons/projects-icon-3.svg');
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 40px;
+  }
+  &__item-text{
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+    @extend %dmsans-700;
+  }
+}
+
+// About
+
+// Widgets
+
+.widgets{
+  background-color: #fcd7b6;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+  }
+  &__item{
+    text-align: center;
+  }
+  &__num{
+    font-size: 36px;
+    line-height: 32px;
+    @extend %dmsans-700;
+    color: #243f4d;
+    margin-top: 18px;
+  }
+  &__text{
+    color: #243f4d;
+    font-size: 18px;
+    line-height: 32px;
+    @extend %dmsans-700;
+    margin-top: 18px;
+  }
+}
+
+// Widgets
+
+// Team
+
+.team{
+  padding: 118px 0;
+  &__inner{
+    display: flex;
+  }
+  &__info{
+    margin-right: 100px;
+  }
+  &__info-title{
+    font-size: 36px;
+    line-height: 32px;
+    @extend %dmsans-700;
+    color: #243f4d;
+    margin-bottom: 22px;
+  }
+  &__info-text{
+    width: 308px;
+    color: #243f4d;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    margin-bottom: 36px;
+  }
+  &__info-link{
+    padding: 18px 65px 18px 20px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    position: relative;
+  }
+   &__info-link::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    top: 26px;
+    right: 24px;
+    background-color: #fff;
+  }
+  &__info-link::before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 23px;
+    right: 24px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+  }
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    margin-bottom: 100px;
+    position: relative;
+  }
+  &__item-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 24px;
+    position: absolute;
+    bottom: -66px;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+  &__item-title{
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+    margin-bottom: 12px;
+    @extend %dmsans-700;
+  }
+  &__item-descr{
+    color: #565872;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+  }
+  &__item-social{
+    margin-left: 54px;
+  }
+}
+
+// Team
+
 // Footer
 
 .footer-top{
