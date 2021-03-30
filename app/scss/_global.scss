@@ -39,16 +39,12 @@ a{
     display: flex;
   }
   &__item{
-    font-size: 14px;
-    line-height: 24px;
-    color: #979ba0;
-    @extend %rubik-400;
     padding-right: 20px;
     position: relative;
     &::after{
       content: "";
       position: absolute;
-      top: 9px;
+      top: 8px;
       right: 9px;
       width: 1px;
       height: 11px;
@@ -63,6 +59,9 @@ a{
     }
   }
   &__link{
-    color: inherit;
+    font-size: 14px;
+    line-height: 24px;
+    color: #979ba0;
+    @extend %rubik-400;
   }
 }

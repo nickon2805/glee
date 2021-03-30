@@ -969,6 +969,353 @@
 
 // Team
 
+// Shop
+
+.shop{
+  padding: 114px 0 120px;
+  &__inner{
+    display: flex;
+  }
+  &__filters{
+    min-width: 270px;
+    margin-right: 30px;
+  }
+}
+
+.filter{
+  &__item{
+    margin-bottom: 56px;
+  }
+  &__title{
+    font-size: 18px;
+    color: #243f4d;
+    @extend %dmsans-700;
+    margin-bottom: 25px;
+    display: flex;
+    position: relative;
+  }
+}
+
+.filter-price{
+  &__label{
+    display: flex;
+    color: #243f4d;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  &__title::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 74px;
+    width: 38px;
+    height: 2px;
+    background-color: #a3bbc8;
+  }
+}
+
+.irs--flat .irs-line {
+    top: 7px;
+    height: 2px;
+    background-color: #dfe7ec;
+    border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+    top: 6px;
+    height: 4px;
+    background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle {
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle>i:first-child{
+  display: none;
+}
+
+.irs-from, .irs-to, .irs-single{
+  display: none;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max{
+  display: none;
+}
+
+.irs--flat {
+  height: 20px;
+}
+
+.filter-category{
+  &__title::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    width: 38px;
+    height: 2px;
+    background-color: #a3bbc8;
+  }
+  &__label{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 22px 16px 16px;
+    border-radius: 5px;
+    transition: all .3s;
+    &:hover{
+      background-color: #edf1f4;
+    }
+  }
+  &__text{
+    color: #243f4d;
+    font-size: 16px;
+    @extend %rubik-400;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox{
+      width: 12px;
+      height: 7px;
+      transform: rotate(135deg);
+    }
+  }
+  &__checkbox{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -14px;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #243f4d;
+    border-right: 1px solid #243f4d;
+    transform: rotate(45deg);
+  }
+}
+
+.filter-brand{
+  &__title::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 38px;
+    height: 2px;
+    background-color: #a3bbc8;
+  }
+  &__label{
+    margin-bottom: 6px;
+    display: block;
+    cursor: pointer;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-brand__checkbox{
+      background-color: #edf1f4;
+      border-radius: 6px;
+    }
+  }
+  &__checkbox{
+    color: #243f4d;
+    font-size: 16px;
+    @extend %rubik-400;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 22px 14px 14px;
+  }
+  &__num{
+    color: #243f4d;
+  }
+}
+
+.filter-products{
+  &__title::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 44px;
+    width: 38px;
+    height: 2px;
+    background-color: #a3bbc8;
+  }
+  &__item{
+    display: flex;
+    margin-bottom: 22px;
+  }
+  &__image{
+    margin-right: 18px;
+    padding: 4px;
+    border: 2px solid #f2f2f2;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+  &__box-title{
+    font-size: 14px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 4px;
+  }
+  &__num{
+    font-size: 15px;
+    line-height: 26px;
+    color: #333333;
+    @extend %rubik-400;
+  }
+  &__star{
+    padding: 0;
+    margin-bottom: 4px;
+  }
+}
+
+.shop-content{
+  width: 100%;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding: 68px 0;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    margin-right: 16px;
+  }
+  &__link{
+    border: 1px solid #a3bbc8;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link--active{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+  &__next{
+    width: 74px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #a3bbc8;
+    color: #243f4d;
+  }
+}
+
+// Shop
+
+// Shop list-2
+
+.shop-item{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 40px;
+   &__img-box{
+    min-width: 370px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 70px 30px;
+    border: 1px solid #f2f2f2;
+  }
+    &__images{
+      object-fit: contain;
+    }
+    &__link-box{
+    transition: all .3s;
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: 250px;
+    transform: translateY(1100%);
+  }
+  &__link{
+    margin-right: 14px;
+    padding: 13px 10px 5px 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all .3s;
+    path{
+      transition: all .3s;
+    }
+  }
+  &__link:hover{
+    background-color: #a3bbc8;
+    path{
+      fill: #fff;
+    }
+  }
+  &:hover{
+    .shop-item__link-box{
+      transform: translateY(0);
+    }
+  }
+  &__info{
+    margin-left: 60px;
+    // width: 418px;
+  }
+  &__title{
+    font-size: 40px;
+    line-height: 25px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 24px;
+  }
+  &__num{
+    font-size: 30px;
+    line-height: 45px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 26px;
+  }
+  &__text{
+    color: #243f4d;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    margin-bottom: 28px;
+  }
+  &__btn{
+    padding: 16px 50px;
+    background-color: #a3bbc8;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    @extend %rubik-400;
+    cursor: pointer;
+  }
+  &__star{
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.pagination-shop{
+  justify-content: start;
+}
+
+// Shop list-2
+
 // Footer
 
 .footer-top{
