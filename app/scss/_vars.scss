@@ -25,3 +25,26 @@ $title: #191919;
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
+
+%btn{
+  background-color: #a3bbc8;
+  border: none;
+  padding: 12px 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

@@ -7,8 +7,6 @@ body {
   color: $default;
   font-size: 16px;
   @extend %rubik-400;
-  display: flex;
-  flex-direction: column;
 }
 
 .main{
@@ -32,4 +30,38 @@ a{
   font-size: 16px;
   line-height: 26px;
   @extend %rubik-400;
+}
+
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 20px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 9px;
+      width: 1px;
+      height: 11px;
+      background-color: #979ba0;
+      transform: rotate(20deg);
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 24px;
+    color: #979ba0;
+    @extend %rubik-400;
+  }
 }
