@@ -1,9 +1,39 @@
 $(function(){
 
+  $('.shop__filter-btn').on('click', function(){
+    $('.shop__filters').slideToggle();
+  });
+
+  $('.shop-content__inner').addClass('shop-content__nogrid');
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active')
+  })
+
   $('.related__items').slick({
     slidesToShow: 4,
     prevArrow: '<button class="slick-btn slick-prev"></button>',
     nextArrow: '<button class="slick-btn slick-next"></button>',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 821,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.detalis-tabs__top-item').on('click', function(e){
